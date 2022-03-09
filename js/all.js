@@ -23,7 +23,7 @@ const renderData = (tableData) => {
   table.innerHTML = str;
 };
 
-axios.get(url)
+this.axios.get(url)
   .then((res) => {
     data = res.data.filter((a) => a.作物名稱);
     // TODO: 之後拆成 renderData 函式
